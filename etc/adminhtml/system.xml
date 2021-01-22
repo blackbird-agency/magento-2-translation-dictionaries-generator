@@ -1,0 +1,22 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="blackbird_extensions" translate="label" sortOrder="300">
+            <label>Blackbird Extensions</label>
+        </tab>
+        <section id="blackbird_translationdictionariesgenerator" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Translation Dictionaries Generator</label>
+            <tab>blackbird_extensions</tab>
+            <resource>Blackbird_TranslationDictionariesGenerator::settings</resource>
+            <group id="general" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10" >
+                <label>General</label>
+                <field id="excluded_modules" translate="label" type="multiselect" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10">
+                    <label>Excluded modules</label>
+                    <comment>Select which module you don't need to translate</comment>
+                    <source_model>Blackbird\TranslationDictionariesGenerator\Model\Config\Source\ModuleList</source_model>
+                    <config_path>blackbird_TranslationDictionariesGenerator/general/excluded_modules</config_path>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

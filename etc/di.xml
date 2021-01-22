@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Blackbird\TranslationDictionariesGenerator\Api\TranslationManagementInterface" type="Blackbird\TranslationDictionariesGenerator\Model\TranslationManagement" />
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="export_translation" xsi:type="object">Blackbird\TranslationDictionariesGenerator\Console\ExportTranslation</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
