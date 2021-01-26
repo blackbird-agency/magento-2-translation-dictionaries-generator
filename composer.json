@@ -17,13 +17,5 @@
         "psr-4": {
             "Blackbird\\ExportTranslation\\": ""
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "Blackbird/TranslationDictionnariesGenerator"
-            ]
-        ]
     }
 }
