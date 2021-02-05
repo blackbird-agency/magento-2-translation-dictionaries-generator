@@ -14,7 +14,7 @@
                     <label>Excluded modules</label>
                     <comment>Select which module you don't need to translate</comment>
                     <source_model>Blackbird\TranslationDictionariesGenerator\Model\Config\Source\ModuleList</source_model>
-                    <config_path>blackbird_TranslationDictionariesGenerator/general/excluded_modules</config_path>
+                    <config_path>blackbird_translationdictionariesgenerator/general/excluded_modules</config_path>
                 </field>
             </group>
         </section>
