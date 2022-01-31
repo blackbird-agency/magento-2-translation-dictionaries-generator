@@ -3,7 +3,8 @@
     "description": "",
     "require": {
         "magento/magento-composer-installer": "*",
-        "magento/module-translation": "*"
+        "magento/module-translation": "*",
+        "blackbird/extensions-core": ">=100.0.3"
     },
     "type": "magento2-module",
     "version": "1.0.4",

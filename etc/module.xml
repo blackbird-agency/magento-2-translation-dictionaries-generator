@@ -4,6 +4,7 @@
     <module name="Blackbird_TranslationDictionariesGenerator" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Translation"/>
+            <module name="Blackbird_ExtensionsCore"/>
         </sequence>
     </module>
 </config>
