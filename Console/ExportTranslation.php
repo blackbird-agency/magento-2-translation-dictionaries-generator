@@ -130,7 +130,7 @@ class ExportTranslation extends Command
         $localeCode = $input->getOption(self::LOCALE_CODE);
         $destination = $input->getOption(self::OUTPUT_FILE);
         $output->writeln(new Phrase('Start export for %1 locale(s)', [$localeCode]));
-        
+
         try {
             $this->state->setAreaCode(Area::AREA_FRONTEND);
 
@@ -180,7 +180,7 @@ class ExportTranslation extends Command
     {
         $generator = ServiceLocator::getDictionaryGenerator();
         $generator->generate(
-            null,
+            '',
             $this->getPhrasesPath(),
             true
         );
