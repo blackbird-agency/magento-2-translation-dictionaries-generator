@@ -160,7 +160,7 @@ class TranslationManagement implements TranslationManagementInterface
         $tmpDir = $varDir->getAbsolutePath($varPath . '/' . self::EXPORT_VAR_DIR);
 
         if (!$directory->create($tmpDir)) {
-            throw new \RuntimeException(new Phrase('Failed to create %1 directory', [self::EXPORT_VAR_DIR]));
+            throw new \RuntimeException((string) new Phrase('Failed to create %1 directory', [self::EXPORT_VAR_DIR]));
         }
 
         $exportPath = $tmpDir . '/export_translation-' . $locale . '.csv';

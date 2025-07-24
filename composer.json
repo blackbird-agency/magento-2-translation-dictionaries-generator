@@ -6,11 +6,11 @@
         "magento/module-translation": "*"
     },
     "type": "magento2-module",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "authors": [
         {
             "name": "Blackbird Agency",
-            "email": "contact@bird.eu",
+            "email": "support@bird.eu",
             "homepage": "https://black.bird.eu"
         }
     ],

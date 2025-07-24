@@ -78,7 +78,7 @@ class ExportTranslation extends Command
         DirectoryList $directoryList,
         ConfigCollectionFactory $configCollectionFactory,
         Filesystem\Driver\File $driverFile,
-        string $name = null
+        ?string $name = null
     ) {
         $this->translationManagement = $translationManagement;
         $this->state = $state;
