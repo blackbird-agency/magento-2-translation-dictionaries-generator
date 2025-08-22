@@ -1,3 +1,8 @@
+## Version 1.0.7
+*Released the 2025-08-22
+
+* Styles : Remove blackbird tab declaration as it overrides the one in ExtensionsCore
+
 ## Version 1.0.6
 *Released the 2025-07-24*
 
