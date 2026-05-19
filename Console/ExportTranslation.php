@@ -125,7 +125,7 @@ class ExportTranslation extends Command
     /**
      * {@inheritDoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output):int
     {
         $localeCode = $input->getOption(self::LOCALE_CODE);
         $destination = $input->getOption(self::OUTPUT_FILE);
@@ -152,7 +152,9 @@ class ExportTranslation extends Command
             $output->writeln('Translation export finish ! Find it here : ' . $filepath);
         } catch (NoSuchEntityException | LocalizedException $e) {
             $output->writeln($e->getMessage());
+            return Command::FAILURE;
         }
+        return Command::SUCCESS;
     }
 
     /**

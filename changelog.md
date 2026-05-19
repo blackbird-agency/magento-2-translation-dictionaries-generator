@@ -1,3 +1,7 @@
+## Version 1.0.8
+*Released the 2026-05-19*
+* **Fix** compatibility with Magento 2.5.9 and php 8.5
+
 ## Version 1.0.7
 *Released the 2025-08-22
 
